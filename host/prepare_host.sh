@@ -1,6 +1,6 @@
 #!/bin/bash
 
-update_upgrade() {
+update_and_upgrade() {
 	echo "Update and upgrade"
 	apt-get -y update && apt-get -y upgrade
 }
@@ -10,6 +10,7 @@ create_bashrc() {
 	cat << EOF > ~/.bashrc
 
 alias l='ls -la'
+export LFS=/mnt/lfs
 EOF
 }
 
