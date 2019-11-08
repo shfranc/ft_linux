@@ -19,3 +19,5 @@ Personal linux distribution from scratch
 ## Packages
 1. as *root*, sinstall packages: run `install_packages.sh`
 2. as *root*, check packages: run `check_packages.sh`
+3. prepare tools directory for later: `prepare_tools.sh`
+4. create a less priviledged user lfs: `user_lfs.sh`
