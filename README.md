@@ -17,9 +17,5 @@ Personal linux distribution from scratch
 
 
 ## Packages
-1. get packages list: `wget http://fr.linuxfromscratch.org/view/lfs-systemd-stable/wget-list`
-2. run `install_package.sj`
-3. get md5sum list: `wget http://fr.linuxfromscratch.org/view/lfs-systemd-stable/md5sums --output-file $LFS/sources/md5sums`
-4. check binaries
-```bash
-```
+1. install packages: run `install_package.sh`
+2. check packages: run `check_package.sh`
