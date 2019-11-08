@@ -7,7 +7,7 @@ Personal linux distribution from scratch
 	- 2G swap
 	- 20G ext4 not mounted
 2. connect to ssh + scp ft_linux or git clone
-3. run `prepare_host.sh` and `check_host.sh`
+3. as *root*, run `prepare_host.sh` and `check_host.sh`
 4. `fdisk -l` to see the name of the 20G partition not mounted
 5. run `mount_lfs.sh <PARTITION>`
 ```bash
@@ -17,5 +17,5 @@ Personal linux distribution from scratch
 
 
 ## Packages
-1. install packages: run `install_package.sh`
-2. check packages: run `check_package.sh`
+1. as *root*, sinstall packages: run `install_packages.sh`
+2. as *root*, check packages: run `check_packages.sh`
