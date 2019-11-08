@@ -10,4 +10,8 @@ Personal linux distribution from scratch
 3. run `prepare_host.sh` and `check_host.sh`
 4. `fdisk -l` to see the name of the 20G partition not mounted
 5. run `mount_lfs.sh <PARTITION>`
+```bash
+> df -h
+/dev/sda5        19G   45M   18G   1% /mnt/lfs
+```
 
