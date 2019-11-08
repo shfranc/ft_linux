@@ -24,3 +24,5 @@ Personal linux distribution from scratch
 ## User & environment
 1. create a less priviledged user lfs: `user_lfs.sh`
 2. switch user: `su - lfs`
+3. config the environment for *lfs*, run `user_env.sh`
+4. `source ~/.bash_profile`
