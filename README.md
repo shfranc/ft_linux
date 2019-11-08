@@ -15,3 +15,11 @@ Personal linux distribution from scratch
 /dev/sda5        19G   45M   18G   1% /mnt/lfs
 ```
 
+
+## Packages
+1. get packages list: `wget http://fr.linuxfromscratch.org/view/lfs-systemd-stable/wget-list`
+2. run `install_package.sj`
+3. get md5sum list: `wget http://fr.linuxfromscratch.org/view/lfs-systemd-stable/md5sums --output-file $LFS/sources/md5sums`
+4. check binaries
+```bash
+```
