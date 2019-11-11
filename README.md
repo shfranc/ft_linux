@@ -35,7 +35,7 @@ Personal linux distribution from scratch
 SBU ~ 3 min
 
 | Package | SBU | Status |
-| --- | --- |
+| --- | --- | --- |
 | binutils-2.32 | 1 | ok |
 | gcc-9.2.0 | 12 | make |
 | linux-5.2.8 |  |  |
