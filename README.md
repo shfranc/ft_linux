@@ -34,13 +34,17 @@ Personal linux distribution from scratch
 
 SBU ~ 3 min
 
-| Package | SBU | Status |
-| --- | --- | --- |
-| binutils-2.32 | 1 | ok |
-| gcc-9.2.0 | 12 | make |
-| linux-5.2.8 |  |  |
-| glibc-2.30 |  |  |
-| Libstdc++ |  |  |
+| Package | SBU | Install | Tests |
+| ---: | --- | :---: | :---: |
+| binutils-2.32 - 1st pass | 1 | ok | - |
+| gcc-9.2.0 - 1st pass | 12 | ok | - |
+| linux-5.2.8 | 0.1  | ok | - |
+| glibc-2.30 | 4.8 | ok | ok |
+| libstdc++ | 0.5 | ok | - |
+| binutils-2.32 - 2nd pass | 1.1 | ok | - |
+| linux-5.2.8 | 1.1  | ok | - |
+| gcc-9.2.0 - 2nd pass | 15 | | |
+|  |  |  |  |
 
 ------------------
 
