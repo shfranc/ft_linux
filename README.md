@@ -7,8 +7,7 @@ Personal linux distribution from scratch. Following the LFS setup with a 5.2.8 k
 - [Miscellaneous](#misc)
 
 
-<div id='setup'/>
-## Setup Host and Temporary Filesystem
+## Setup Host and Temporary Filesystem <div id='setup'/>
 
 ### Setup Host VM
 1. VM debian 10
@@ -93,8 +92,7 @@ drwxrwxrwt  3 lfs  root 4096 Nov 15 14:00 sources
 drwxr-xr-x 13 root root 4096 Nov 15 11:12 tools
 ```
 
-<div id='lfs'/>
-## Build LFS
+## Build Linux From Scratch <div id='lfs'/>
 
 ### Virtual filesystem for the kernel
 1. create /dev /proc /sys /run
@@ -148,8 +146,7 @@ total 76
 
 ------------------
 
-<div id='misc'/>
-## Mics
+## Miscellaneous <div id='misc'/>
 
 ### Resume work:
 - before ending a work session: copy the entire folder of the VM in the cloud/usb key.
@@ -165,7 +162,7 @@ ex: mount -v -t ext4 /dev/sda5 $LFS
 ```
 - check that the user *lfs* exists and that the permissions for the folders /mnt/sources or /mnt/tools are correct.
 
-**LFS**
+**LFS**  
 As *root*
 1. Mount the FS
     - /dev (6.2.2)
