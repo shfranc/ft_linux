@@ -1,7 +1,9 @@
 # ft_linux
 Personal linux distribution from scratch. Following the LFS setup with a 5.2.8 kernel.
 
-## Setup Host VM
+## Preparation
+
+### Setup Host VM
 1. VM debian 10
 	- 10G ext4 /
 	- 2G swap
@@ -16,18 +18,18 @@ Personal linux distribution from scratch. Following the LFS setup with a 5.2.8 k
 ```
 
 
-## Download Sources
+### Download Sources
 1. as *root*, sinstall packages: run `install_packages.sh`
 2. as *root*, check packages: run `check_packages.sh`
 3. prepare tools directory for later: `prepare_tools.sh`
 
-## User lfs & environment
+### User lfs & Environment
 1. create a less priviledged user lfs: `user_lfs.sh`
 2. switch user: `su - lfs`
 3. config the environment for *lfs*, run `user_env.sh`
 4. `source ~/.bash_profile`
 
-## Install Tools
+### Install Tools
 ```bash
 tar xvf <package>
 # follow instructions
@@ -84,13 +86,15 @@ drwxrwxrwt  3 lfs  root 4096 Nov 15 14:00 sources
 drwxr-xr-x 13 root root 4096 Nov 15 11:12 tools
 ```
 
-## Virtual filesystem for the kernel
+## Build LFS
+
+### Virtual filesystem for the kernel
 1. create /dev /proc /sys /run
 2. make node /dev/console /dev/null
 3. mount /dev # montage en double
 4. mount /dev/pts /proc /sys /run
 
-## Chroot
+### Chroot
 1. chroot: when `/mnt/lfs` become `/`.
 "I have no name!" because /etc/passwd is not created yet.
 2. Create directories according FHS Filesystem Hierarchy Standard.
@@ -125,7 +129,7 @@ total 76
 4. Start new shell to get rid of "I have no name!"
 5. Init journals for login, agetty, et init
 
-## Install packages
+### Install packages
 
 | Package | SBU | Install | Tests |
 | ---: | --- | :---: | :---: |
@@ -141,6 +145,8 @@ total 76
 ### Resume work:
 - before ending a work session: copy the entire folder of the VM in the cloud/usb key.
 - download it back before starting Virtual Box.
+
+**HOST**
 - partition lfs will not be mounted:
 ```bash
 fdisk -l # to check the name of the partition
@@ -149,3 +155,10 @@ mount -v -t ext4 $partition $LFS
 ex: mount -v -t ext4 /dev/sda5 $LFS
 ```
 - check that the user *lfs* exists and that the permissions for the folders /mnt/sources or /mnt/tools are correct.
+
+**LFS**
+As *root*
+1. Mount the FS
+    - /dev (6.2.2)
+    - /dev/pts /proc /sysfs /run (6.2.3)
+2. And then `chroot` (6.4)
