@@ -1,5 +1,5 @@
 # ft_linux
-Personal linux distribution from scratch
+Personal linux distribution from scratch. Following the LFS setup with a 5.2 kernel.
 
 ## Setup
 1. VM debian 10
@@ -43,8 +43,44 @@ SBU ~ 3 min
 | libstdc++ | 0.5 | ok | - |
 | binutils-2.32 - 2nd pass | 1.1 | ok | - |
 | linux-5.2.8 | 1.1  | ok | - |
-| gcc-9.2.0 - 2nd pass | 15 | | |
-|  |  |  |  |
+| gcc-9.2.0 - 2nd pass | 15 | ok | ok |
+| tcl8.6.9 | 0.9 | ok | ok |
+| expect5.45.4 | 0.1 | make | no |
+| dejagnu-1.6.2 | >0.1 | ok | ok |
+| m4-1.4.18 | 0.2 | ok | no |
+| ncurses-6.1 | 0.6 | ok | no |
+| bash-5.0 | 0.4 | ok | no |
+| bison-3.4.1 | 0.3 | ok | no |
+| bzip2-1.0.8 | >0.1 | ok | ok |
+| coreutils-8.31 | 0.8 | ok | no |
+| diffutils-3.7 | 0.2 | ok | no |
+| file-5.37 | 0.1 | ok | no |
+| findutils-4.6.0 | 0.3 | ok | no |
+| gawk-5.0.1 | 0.2 | ok | no |
+| gettext-0.20.1 | 1.8 | ok | no |
+| grep-3.3 | 0.2 | ok | no |
+| gzip-1.10 | 0.1 | ok | no |
+| make-4.2.1 | 0.1 | ok | no |
+| patch-2.7.6 | 0.2 | ok | no |
+| perl-5.30.0 | 1.6 | ok| no |
+| Python-3.7.4 | 1.4 | ok | no |
+| sed-4.7 | 0.2 | ok | no |
+| tar-1.32 | 0.3 | ok | no |
+| texinfo-6.6 | 0.2 | ok | no |
+| util-linux-2.34 | 1 | ok | no |
+| xz-5.2.4 | 0.2 | ok | no |
+
+
+## Back to root
+1. change to user *root* and change ownership of `tools` to root.
+```bash
+root@debian:/mnt# ls -la lfs/
+total 16
+drwxr-xr-x  4 root root 4096 Nov 11 16:26 .
+drwxr-xr-x  3 root root 4096 Nov 11 16:19 ..
+drwxrwxrwt  3 lfs  root 4096 Nov 15 14:00 sources
+drwxr-xr-x 13 root root 4096 Nov 15 11:12 tools
+```
 
 ------------------
 
