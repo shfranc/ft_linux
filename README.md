@@ -1,7 +1,7 @@
 # ft_linux
-Personal linux distribution from scratch. Following the LFS setup with a 5.2 kernel.
+Personal linux distribution from scratch. Following the LFS setup with a 5.2.8 kernel.
 
-## Setup
+## Setup Host VM
 1. VM debian 10
 	- 10G ext4 /
 	- 2G swap
@@ -16,7 +16,7 @@ Personal linux distribution from scratch. Following the LFS setup with a 5.2 ker
 ```
 
 
-## Download Packages
+## Download Sources
 1. as *root*, sinstall packages: run `install_packages.sh`
 2. as *root*, check packages: run `check_packages.sh`
 3. prepare tools directory for later: `prepare_tools.sh`
@@ -27,10 +27,12 @@ Personal linux distribution from scratch. Following the LFS setup with a 5.2 ker
 3. config the environment for *lfs*, run `user_env.sh`
 4. `source ~/.bash_profile`
 
-## Install packages
-- tar xvf <package>
-- follow instructions
-- rm -rf <extracted folder>
+## Install Tools
+```bash
+tar xvf <package>
+# follow instructions
+rm -rf <extracted folder>
+```
 
 SBU ~ 3 min
 
@@ -88,8 +90,49 @@ drwxr-xr-x 13 root root 4096 Nov 15 11:12 tools
 3. mount /dev # montage en double
 4. mount /dev/pts /proc /sys /run
 
-## Paquet Management
+## Chroot
+1. chroot: when `/mnt/lfs` become `/`.
+"I have no name!" because /etc/passwd is not created yet.
+2. Create directories according FHS Filesystem Hierarchy Standard.
+```
+(lfs chroot) I have no name!:/# ls -lsa
+total 76
+4 drwxr-xr-x 23    0 0 4096 Nov 15 15:39 .
+4 drwxr-xr-x 23    0 0 4096 Nov 15 15:39 ..
+4 drwxr-xr-x  2    0 0 4096 Nov 15 15:38 bin
+4 drwxr-xr-x  2    0 0 4096 Nov 15 15:38 boot
+0 drwxr-xr-x 17    0 0 3180 Nov 15 14:27 dev
+4 drwxr-xr-x  4    0 0 4096 Nov 15 15:38 etc
+4 drwxr-xr-x  2    0 0 4096 Nov 15 15:38 home
+4 drwxr-xr-x  3    0 0 4096 Nov 15 15:38 lib
+4 drwxr-xr-x  2    0 0 4096 Nov 15 15:39 lib64
+4 drwxr-xr-x  4    0 0 4096 Nov 15 15:38 media
+4 drwxr-xr-x  2    0 0 4096 Nov 15 15:38 mnt
+4 drwxr-xr-x  2    0 0 4096 Nov 15 15:38 opt
+0 dr-xr-xr-x 79    0 0    0 Nov 15 14:27 proc
+4 drwxr-x---  2    0 0 4096 Nov 15 15:38 root
+0 drwxrwxrwt  2    0 0   40 Nov 15 15:15 run
+4 drwxr-xr-x  2    0 0 4096 Nov 15 15:38 sbin
+4 drwxrwxrwt  3 1001 0 4096 Nov 15 14:00 sources
+4 drwxr-xr-x  2    0 0 4096 Nov 15 15:38 srv
+0 dr-xr-xr-x 13    0 0    0 Nov 15 14:27 sys
+4 drwxrwxrwt  2    0 0 4096 Nov 15 15:38 tmp
+4 drwxr-xr-x 13    0 0 4096 Nov 15 11:12 tools
+4 drwxr-xr-x 10    0 0 4096 Nov 15 15:39 usr
+4 drwxr-xr-x 10    0 0 4096 Nov 15 15:39 var
+```
+3. Create essentials files and symlink
+4. Start new shell to get rid of "I have no name!"
+5. Init journals for login, agetty, et init
 
+## Install packages
+
+| Package | SBU | Install | Tests |
+| ---: | --- | :---: | :---: |
+| linux-5.2.8 | >0.1 | ok | - |
+| man-pages-5.02 | >0.1 | ok | - |
+|  |  |  |  |
+|  |  |  |  |
 
 ------------------
 
