@@ -1,7 +1,14 @@
 # ft_linux
 Personal linux distribution from scratch. Following the LFS setup with a 5.2.8 kernel.
 
-## Preparation
+**Table of Content**
+- [Setup Host and Temporary Filesystem](#setup)
+- [Build Linux From Scratch](#lfs)
+- [Miscellaneous](#misc)
+
+
+<div id='setup'/>
+## Setup Host and Temporary Filesystem
 
 ### Setup Host VM
 1. VM debian 10
@@ -75,7 +82,7 @@ SBU ~ 3 min
 | xz-5.2.4 | 0.2 | ok | no |
 
 
-## Back to root
+### Back to root
 1. change to user *root* and change ownership of `tools` to root.
 ```bash
 root@debian:/mnt# ls -la lfs/
@@ -86,6 +93,7 @@ drwxrwxrwt  3 lfs  root 4096 Nov 15 14:00 sources
 drwxr-xr-x 13 root root 4096 Nov 15 11:12 tools
 ```
 
+<div id='lfs'/>
 ## Build LFS
 
 ### Virtual filesystem for the kernel
@@ -140,6 +148,7 @@ total 76
 
 ------------------
 
+<div id='misc'/>
 ## Mics
 
 ### Resume work:
