@@ -45,7 +45,7 @@ SBU ~ 3 min
 | linux-5.2.8 | 1.1  | ok | - |
 | gcc-9.2.0 - 2nd pass | 15 | ok | ok |
 | tcl8.6.9 | 0.9 | ok | ok |
-| expect5.45.4 | 0.1 | make | no |
+| expect5.45.4 | 0.1 | ok | no |
 | dejagnu-1.6.2 | >0.1 | ok | ok |
 | m4-1.4.18 | 0.2 | ok | no |
 | ncurses-6.1 | 0.6 | ok | no |
@@ -82,6 +82,15 @@ drwxrwxrwt  3 lfs  root 4096 Nov 15 14:00 sources
 drwxr-xr-x 13 root root 4096 Nov 15 11:12 tools
 ```
 
+## Virtual filesystem for the kernel
+1. create /dev /proc /sys /run
+2. make node /dev/console /dev/null
+3. mount /dev # montage en double
+4. mount /dev/pts /proc /sys /run
+
+## Paquet Management
+
+
 ------------------
 
 ## Mics
@@ -93,5 +102,7 @@ drwxr-xr-x 13 root root 4096 Nov 15 11:12 tools
 ```bash
 fdisk -l # to check the name of the partition
 mount -v -t ext4 $partition $LFS
+
+ex: mount -v -t ext4 /dev/sda5 $LFS
 ```
 - check that the user *lfs* exists and that the permissions for the folders /mnt/sources or /mnt/tools are correct.
