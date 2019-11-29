@@ -141,8 +141,90 @@ total 76
 | ---: | --- | :---: | :---: |
 | linux-5.2.8 | >0.1 | ok | - |
 | man-pages-5.02 | >0.1 | ok | - |
+| glibc-2.30 | 21 | ok | ok |
+| zlib-1.2.11  | >0.1 | ok | ok |
+| file-5.37 | >0.1 | ok | ok |
+| readline-8.0 | >0.1 | ok | - |
+| m4-1.4.18 | >0.1 |  | - |
+| bc-2.1.3 | 0.1 |  | - |
+| binutils-2.32 | 7.4 | ok | ok |
+| gmp-6.1.2 | 1.2 | ok | ok |
+| mpfr-4.0.2 | 0.9 | ok | ok |
+| mpc-1.1.0 | 0.3 | ok | - |
+| shadow-4.7 | 0.2 | ok | - |
+| gcc-9.2.0 | 95 | ok | ok |
 |  |  |  |  |
 |  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+
+lfs root mdp: lfsroot
+
+#### trace tests gcc
+Duration: ~4 hours
+
+```
+		=== g++ Summary ===
+
+# of expected passes		134787
+# of expected failures		527
+# of unsupported tests		5921
+/sources/gcc-9.2.0/build/gcc/xg++  version 9.2.0 (GCC)
+
+		=== gcc tests ===
+--
+		=== gcc Summary ===
+
+# of expected passes		139435
+# of unexpected failures	2
+# of expected failures		527
+# of unsupported tests		2151
+/sources/gcc-9.2.0/build/gcc/xgcc  version 9.2.0 (GCC)
+
+--
+		=== libatomic Summary ===
+
+# of expected passes		54
+		=== libgomp tests ===
+
+
+Running target unix
+
+		=== libgomp Summary ===
+
+# of expected passes		2316
+# of expected failures		2
+# of unsupported tests		210
+		=== libitm tests ===
+
+
+--
+		=== libitm Summary ===
+
+# of expected passes		42
+# of expected failures		3
+# of unsupported tests		1
+		=== libstdc++ tests ===
+
+
+--
+		=== libstdc++ Summary ===
+
+# of expected passes		12985
+# of unexpected failures	9
+# of expected failures		78
+# of unsupported tests		333
+
+Compiler version: 9.2.0 (GCC)
+```
 
 ------------------
 
