@@ -153,18 +153,64 @@ total 76
 | mpc-1.1.0 | 0.3 | ok | - |
 | shadow-4.7 | 0.2 | ok | - |
 | gcc-9.2.0 | 95 | ok | ok |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
+| bzip2-1.0.8 | >0.1 | ok | - |
+| pkg-config-0.29.2 | 0.4 | ok | - |
+| ncurses-6.1 | 0.4 | ok | - |
+| attr-2.4.48 | >0.1 | ok | ok |
+| acl-2.2.53 | >0.1 | ok | - |
+| libcap-2.27 | >0.1 | ok | - |
+| sed-4.7 | 0.4 | ok | - |
+| psmisc-23.2 | >0.1 | ok | - |
+| iana-Etc-2.30 | >0.1 | ok | - |
+| bison-3.4.1 | 0.3 | ok | - |
+| flex-2.6.4 | 0.5 | ok | - |
+| grep-3.3 | 0.5 | ok | - |
+| bash-5.0 | 2.1 | ok | ok |
+| libtool-2.4.6 | 1.9 | ok | - |
+| gdbm-1.18.1 | 0.1 | ok | - |
+| gperf-3.1 | >0.1 | ok | - |
+| expat-2.2.7 | 0.1 | ok | - |
+| inetutils-1.9.4 | 0.3 | ok | - |
+| perl-5.30.0 | 9.9 | ok | - |
+| XML::Parser-2.44 | >0.1 | ok | - |
+|||||
+| intltool-0.51.0 | >0.1 |  |  |
+| autoconf-2.69 | >0.1 |  |  |
+| automake-1.16.1 | >0.1 |  |  |
+| xz-5.2.4 |  |  |  |
+| kmod-26 |  |  |  |
+| gettext-0.20.1 |  |  |  |
+| libelf |  |  |  |
+| de |  |  |  |
+| elfutils-0.177 |  |  |  |
+| libffi-3.2.1 |  |  |  |
+| openSSL-1.1.1c |  |  |  |
+| python-3.7.4 |  |  |  |
+| ninja-1.9.0 |  |  |  |
+| meson-0.51.1 |  |  |  |
+| coreutils-8.31 |  |  |  |
+| check-0.12.0 |  |  |  |
+| diffutils-3.7 |  |  |  |
+| gawk-5.0.1 |  |  |  |
+| findutils-4.6.0 |  |  |  |
+| groff-1.22.4 |  |  |  |
+| grub-2.04 |  |  |  |
+| less-551 |  |  |  |
+| gzip-1.10 |  |  |  |
+| IPRoute2-5.2.0 |  |  |  |
+| kbd-2.2.0 |  |  |  |
+| libpipeline-1.5.1 |  |  |  |
+| make-4.2.1 |  |  |  |
+| patch-2.7.6 |  |  |  |
+| man-DB-2.8.6.1 |  |  |  |
+| yar-1.32 |  |  |  |
+| texinfo-6.6 |  |  |  |
+| vim-8.1.1846 |  |  |  |
+| systemd-241 |  |  |  |
+| d-bus-1.12.16 |  |  |  |
+| procps-3.3.15 |  |  |  |
+| util-linux-2.34 |  |  |  |
+| e2fsprogs-1.45.3 |  |  |  |
 
 lfs root mdp: lfsroot
 
